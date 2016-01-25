@@ -37,10 +37,10 @@
                 <xsl:when test="contains(.,'Clergy')">
                     <xsl:call-template name="Clergy"/>
                 </xsl:when>
-                <xsl:when test="contains(.,'Doctors & Scientists')">
+                <xsl:when test="contains(.,'Doctors')">
                     <xsl:call-template name="Doctors_and_Scientists"/>
                 </xsl:when>
-                <xsl:when test="contains(.,'Explorers & Inventors')">
+                <xsl:when test="contains(.,'Explorers')">
                     <xsl:call-template name="Explorers_and_Inventors"/>
                 </xsl:when>
                 <xsl:when test="contains(.,'Freemasons')">
@@ -55,7 +55,7 @@
                 <xsl:when test="contains(.,'Literary')">
                     <xsl:call-template name="Literary"/>
                 </xsl:when>
-                <xsl:when test="contains(.,'Military & Navy')">
+                <xsl:when test="contains(.,'Military')">
                     <xsl:call-template name="Military_and_Navy"/>
                 </xsl:when>
                 <xsl:when test="contains(.,'Music')">
@@ -77,7 +77,7 @@
                     <xsl:call-template name="Royalty"/>
                 </xsl:when>
                 <xsl:when test="contains(.,'Politician')">
-                    <xsl:call-template name="Politician"/>
+                    <xsl:call-template name="Politicians"/>
                 </xsl:when>
                 <xsl:when test="contains(.,'Fox Hunters')">
                     <xsl:call-template name="Fox_Hunters"/>
@@ -88,7 +88,7 @@
                 <xsl:when test="contains(.,'Stock Exchange Officials')">
                     <xsl:call-template name="Stock_Exchange_Officials"/>
                 </xsl:when>
-                <xsl:when test="contains(.,'Teachers & Headmasters')">
+                <xsl:when test="contains(.,'Teachers')">
                     <xsl:call-template name="Teachers_and_Headmasters"/>
                 </xsl:when>
                 <xsl:when test="contains(.,'Theatre')">
@@ -99,7 +99,7 @@
         
         <!-- Ambassador from England -->
         
-    <xsl:apply-templates name="Ambassador_from_England">
+    <xsl:template name="Ambassador_from_England">
             <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -117,11 +117,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Ambassador to England -->
     
-    <xsl:apply-templates name="Ambassador_to_England">
+    <xsl:template name="Ambassador_to_England">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -139,11 +139,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Americans -->
     
-    <xsl:apply-templates name="Americans">
+    <xsl:template name="Americans">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -157,11 +157,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
      <!-- Architects_and_Engineers --> 
     
-    <xsl:apply-templates name="Architects_and_Engineers"/>
+    <xsl:template name="Architects_and_Engineers">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -196,11 +196,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Artists -->
     
-    <xsl:apply-templates name="Artists"/>
+    <xsl:template name="Artists">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -218,13 +218,13 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- No subject headings for Automobile_Devotees -->
     
     <!-- Aviators -->
     
-    <xsl:apply-templates name="Aviators"/>
+    <xsl:template name="Aviators">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -242,11 +242,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Bankers_and_Financiers -->
     
-    <xsl:apply-templates name="Bankers_and_Financiers"/>
+    <xsl:template name="Bankers_and_Financiers">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -281,11 +281,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Businessmen_and_Empire_Builders -->
     
-    <xsl:apply-templates name="Businessmen_and_Empire_Builders"/>
+    <xsl:template name="Businessmen_and_Empire_Builders">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -320,11 +320,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
         
     <!-- Chancellors_of_Exchequer -->
     
-    <xsl:apply-templates name="Chancellors_of_Exchequer"/>
+    <xsl:template name="Chancellors_of_Exchequer">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -342,11 +342,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Clergy -->
     
-    <xsl:apply-templates name="Clergy"/>
+    <xsl:template name="Clergy">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -364,13 +364,13 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- no lcsh subject headings for Criminals -->
     
     <!-- Doctors_and_Scientists -->
     
-    <xsl:apply-templates name="Doctors_and_Scientists"/>
+    <xsl:template name="Doctors_and_Scientists">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -405,11 +405,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Explorers_and_Inventors -->
     
-    <xsl:apply-templates name="Explorers_and_Inventors"/>
+    <xsl:template name="Explorers_and_Inventors">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -444,11 +444,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Freemasons -->
     
-    <xsl:apply-templates name="Freemasons"/>
+    <xsl:template name="Freemasons">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -466,11 +466,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Ladies -->
     
-    <xsl:apply-templates name="Ladies"/>
+    <xsl:template name="Ladies">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -488,11 +488,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Legal -->
     
-    <xsl:apply-templates name="Legal"/>
+    <xsl:template name="Legal">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -510,11 +510,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Literary -->
     
-    <xsl:apply-templates name="Literary"/>
+    <xsl:template name="Literary">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -532,11 +532,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Military_and_Navy -->
     
-    <xsl:apply-templates name="Military_and_Navy"/>
+    <xsl:template name="Military_and_Navy">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -571,13 +571,13 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- no headings for Miscellaneous -->
     
     <!-- Music -->
     
-    <xsl:apply-templates name="Music"/>
+    <xsl:template name="Music">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -595,11 +595,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Newspapermen -->
     
-    <xsl:apply-templates name="Newspapermen"/>
+    <xsl:template name="Newspapermen">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -617,13 +617,13 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- no subject heading for Orientals -->
     
     <!-- Policemen -->
     
-    <xsl:apply-templates name="Policemen"/>
+    <xsl:template name="Policemen">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -641,11 +641,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Politicians -->
     
-    <xsl:apply-templates name="Politicians"/>
+    <xsl:template name="Politicians">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -663,11 +663,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Prime_Ministers -->
     
-    <xsl:apply-templates name="Prime_Ministers"/>
+    <xsl:template name="Prime_Ministers">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -685,7 +685,7 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- no subject headings for Railway_Officials -->
   
@@ -693,7 +693,7 @@
     
     <!-- Royalty -->
     
-    <xsl:apply-templates name="Royalty"/>
+    <xsl:template name="Royalty">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -711,7 +711,7 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- no subject headings for Scotsmen -->
     
@@ -721,7 +721,7 @@
     
     <!-- Fox_Hunters -->
     
-    <xsl:apply-templates name="Fox_Hunters"/>
+    <xsl:template name="Fox_Hunters">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -739,11 +739,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Horse_Trainers -->
     
-    <xsl:apply-templates name="Horse_Trainers"/>
+    <xsl:template name="Horse_Trainers">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -761,7 +761,7 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- no subject headings for Sport_Riders -->
      
@@ -769,7 +769,7 @@
     
     <!-- no subject headings for Yachting_Devotees -->
     
-    <xsl:apply-templates name="Other"/>
+    <xsl:template name="Other">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -812,7 +812,7 @@
                             <xsl:value-of>20th century</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- no subject headings for Sports_Billiards -->
     
@@ -841,7 +841,7 @@
     
     <!-- Stock_Exchange_Officials -->
     
-    <xsl:apply-templates name="Stock_Exchange_Officials"/>
+    <xsl:template name="Stock_Exchange_Officials">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -859,11 +859,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Teachers_and_Headmasters -->
     
-    <xsl:apply-templates name="Teachers_and_Headmasters"/>
+    <xsl:template name="Teachers_and_Headmasters">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -881,11 +881,11 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- Theatre -->
     
-    <xsl:apply-templates name="Theatre"/>
+    <xsl:template name="Theatre">
     <xsl:element name="subject" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
                 <xsl:attribute name="authority">
                     <xsl:value-of>lcsh</xsl:value-of>
@@ -903,7 +903,7 @@
                             <xsl:value-of>Caricatures and cartoons</xsl:value-of>
                         </xsl:element>
             </xsl:element>
-        </xsl:apply-templates>
+        </xsl:template>
     
     <!-- no subject headings for Trade_Union_Officials -->
     
