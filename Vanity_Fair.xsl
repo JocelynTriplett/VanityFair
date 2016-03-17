@@ -7,6 +7,9 @@
         indent="yes"/>
     <xsl:output method="text"/>
     <xsl:output method="xml" indent="yes" name="xml"/>
+    
+    <!-- Stylesheet for converting Vanity Fair metadata from Excel xml to MODS -->
+    <!-- Created by Jocelyn Triplett, March 2016 -->
 
 
     <xsl:template match="/">
