@@ -128,6 +128,7 @@
         <xsl:call-template name="relatedItem"/>
         <xsl:call-template name="identifier"/>
         <xsl:call-template name="location"/>
+        <xsl:call-template name="accessCondition"/>
         <xsl:call-template name="recordInfo"/>
     </xsl:template>
 
@@ -1214,6 +1215,15 @@
             <xsl:element name="physicalLocation">
                 <xsl:value-of>Small Special Collections Library</xsl:value-of>
             </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template name="accessCondition">
+        <xsl:element name="accessCondition" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
+            <xsl:attribute name="type">
+                <xsl:value-of>useAndReproduction</xsl:value-of>
+            </xsl:attribute>
+            <xsl:value-of>No Copyright - United States (NoC-US)</xsl:value-of>
         </xsl:element>
     </xsl:template>
 

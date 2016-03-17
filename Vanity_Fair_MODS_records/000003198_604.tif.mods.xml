@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns="http://www.loc.gov/mods/v3"
+      xmlns:date="java:java.util.Date"
+      xmlns:fn="http://www.w3.org/2005/xpath-functions"
+      xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd">
+   <titleInfo>
+      <title>Baring, Viscount</title>
+   </titleInfo>
+   <name authority="naf" type="personal">
+      <namePart>Ward, Leslie, Sir, 1851 - 1922</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">art</roleTerm>
+         <roleTerm type="text" authority="marcrelator">Artist</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>still image</typeOfResource>
+   <genre authority="aat">caricatures</genre>
+   <originInfo>
+      <dateCreated
+                   encoding="w3cdtf"
+                   keyDate="yes">1883-01-27</dateCreated>
+   </originInfo>
+   <physicalDescription>
+      <form
+            type="technique"
+            authority="aat">chromolithographs</form>
+      <internetMediaType>image/tiff</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+   </physicalDescription>
+   <abstract displayLabel="Caption">"Winchester"</abstract>
+   <note displayLabel="Category">Bankers and Financiers</note>
+   <note displayLabel="Group">Statesmen, No. 418</note>
+   <note displayLabel="Signature">SPY</note>
+   <subject authority="lcsh">
+      <topic>Chromolithography</topic>
+   </subject>
+   <subject authority="lcsh">
+      <topic>Bankers</topic>
+      <geographic>Great Britain</geographic>
+      <genre>Caricatures and cartoons</genre>
+   </subject>
+   <subject authority="lcsh">
+      <topic>Capitalists and financiers</topic>
+      <geographic>Great Britain</geographic>
+      <genre>Caricatures and cartoons</genre>
+   </subject>
+   <relatedItem type="series" displayLabel="Part of">
+      <titleInfo>
+         <nonSort>The</nonSort>
+         <title>Cecil Lang Collection of Vanity Fair Illustrations</title>
+      </titleInfo>
+      <originInfo>
+         <dateCreated keyDate="yes" encoding="w3cdtf" point="start">1868</dateCreated>
+         <dateCreated encoding="w3cdtf" point="end">1914</dateCreated>
+      </originInfo>
+   </relatedItem>
+   <relatedItem type="series" displayLabel="Appears in">
+      <titleInfo>
+         <title>Vanity Fair</title>
+      </titleInfo>
+      <originInfo>
+         <place>
+            <placeTerm type="text">London</placeTerm>
+         </place>
+         <dateCreated keyDate="yes" encoding="w3cdtf" point="start">1868</dateCreated>
+         <dateCreated encoding="w3cdtf" point="end">1914</dateCreated>
+      </originInfo>
+      <part>
+         <detail type="issue">
+            <number>742</number>
+         </detail>
+      </part>
+   </relatedItem>
+   <identifier type="local" displayLabel="Legacy ID">162758</identifier>
+   <identifier type="local" displayLabel="pid">uva-lib:621157</identifier>
+   <location>
+      <physicalLocation>Small Special Collections Library</physicalLocation>
+   </location>
+   <recordInfo>
+      <recordContentSource
+                           authority="marcorg">viu</recordContentSource>
+      <recordOrigin>Created programmatically by Digital Content Management &amp;
+                    Dissemination, University of Virginia Library.</recordOrigin>
+      <languageOfCataloging>
+         <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      </languageOfCataloging>
+      <recordCreationDate
+                          encoding="w3cdtf">2016-01-28T16:19:26.329-05:00</recordCreationDate>
+   </recordInfo>
+</mods>
