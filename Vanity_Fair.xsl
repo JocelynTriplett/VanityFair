@@ -1137,6 +1137,20 @@
                     <xsl:value-of>1914</xsl:value-of>
                 </xsl:element>
             </xsl:element>
+            <xsl:element name="identifier" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
+                    <xsl:attribute name="type">
+                        <xsl:value-of>accessionNumber</xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="displayLabel">
+                        <xsl:value-of>Collection Accession Number</xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:value-of>MSS 12175</xsl:value-of>
+                </xsl:element>
+        <xsl:element name="location" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
+            <xsl:element name="physicalLocation">
+                <xsl:value-of>Small Special Collections Library</xsl:value-of>
+            </xsl:element>
+        </xsl:element>
         </xsl:element>
 
         <xsl:element name="relatedItem" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
