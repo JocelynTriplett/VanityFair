@@ -251,7 +251,7 @@
             <xsl:attribute name="displayLabel">
                 <xsl:value-of>Caption</xsl:value-of>
             </xsl:attribute>
-            <xsl:value-of select="ss:Cell[6]/ss:Data/text()"/>
+            <xsl:value-of select="concat('Caption: ',ss:Cell[6]/ss:Data/text())"/>
         </xsl:element>
     </xsl:template>
     
@@ -1136,7 +1136,6 @@
                     <xsl:attribute name="point">end</xsl:attribute>
                     <xsl:value-of>1914</xsl:value-of>
                 </xsl:element>
-
             </xsl:element>
         </xsl:element>
 
