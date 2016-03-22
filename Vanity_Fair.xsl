@@ -274,6 +274,12 @@
             </xsl:attribute>
             <xsl:value-of select="ss:Cell[12]/ss:Data/text()"/>
         </xsl:element>
+        <xsl:element name="note" inherit-namespaces="no" xmlns="http://www.loc.gov/mods/v3">
+            <xsl:attribute name="displayLabel">
+                <xsl:value-of>Staff</xsl:value-of>
+            </xsl:attribute>
+            <xsl:value-of>"Group" is the Vanity Fair classification. "Category" is taken from Vanity Fair, Ltd.: Vanity Fair Color Lithographs (not Reproductions) Dating From 1869 to 1914, From the Original British, Vanity Fair Magazine, Caricatured by Spy, Ape and Others. Cincinnati, Ohio: Vanity fair, Ltd., [1970].</xsl:value-of>
+        </xsl:element>
     </xsl:template>
 
 
