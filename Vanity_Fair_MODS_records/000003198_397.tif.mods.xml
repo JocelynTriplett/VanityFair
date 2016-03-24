@@ -30,10 +30,11 @@
       <internetMediaType>image/tiff</internetMediaType>
       <digitalOrigin>reformatted digital</digitalOrigin>
    </physicalDescription>
-   <abstract displayLabel="Caption">"A Judicial Joker"</abstract>
+   <abstract displayLabel="Caption">Caption: "A Judicial Joker"</abstract>
    <note displayLabel="Category">Legal</note>
    <note displayLabel="Group">Judges, No. 50</note>
    <note displayLabel="Signature">SPY</note>
+   <note displayLabel="staff">"Group" is the Vanity Fair classification. "Category" is taken from Vanity Fair, Ltd.: Vanity Fair Color Lithographs (not Reproductions) Dating From 1869 to 1914, From the Original British, Vanity Fair Magazine, Caricatured by Spy, Ape and Others. Cincinnati, Ohio: Vanity fair, Ltd., [1970].</note>
    <subject authority="lcsh">
       <topic>Chromolithography</topic>
    </subject>
@@ -51,6 +52,12 @@
          <dateCreated keyDate="yes" encoding="w3cdtf" point="start">1868</dateCreated>
          <dateCreated encoding="w3cdtf" point="end">1914</dateCreated>
       </originInfo>
+      <identifier
+                  type="accessionNumber"
+                  displayLabel="Collection Accession Number">MSS 12175</identifier>
+      <location>
+         <physicalLocation>Small Special Collections Library</physicalLocation>
+      </location>
    </relatedItem>
    <relatedItem type="series" displayLabel="Appears in">
       <titleInfo>
@@ -74,6 +81,7 @@
    <location>
       <physicalLocation>Small Special Collections Library</physicalLocation>
    </location>
+   <accessCondition type="useAndReproduction">No Copyright - United States (NoC-US)</accessCondition>
    <recordInfo>
       <recordContentSource
                            authority="marcorg">viu</recordContentSource>
@@ -83,6 +91,6 @@
          <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
       </languageOfCataloging>
       <recordCreationDate
-                          encoding="w3cdtf">2016-01-28T16:19:26.329-05:00</recordCreationDate>
+                          encoding="w3cdtf">2016-03-22T16:06:00.981-04:00</recordCreationDate>
    </recordInfo>
 </mods>

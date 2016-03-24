@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns="http://www.loc.gov/mods/v3"
+      xmlns:date="java:java.util.Date"
+      xmlns:fn="http://www.w3.org/2005/xpath-functions"
+      xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-3.xsd">
+   <titleInfo>
+      <title>Sir Charles Wentworth Dilke</title>
+   </titleInfo>
+   <name authority="naf" type="personal">
+      <namePart>Tissot, James Jacques, 1836 - 1902</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">art</roleTerm>
+         <roleTerm type="text" authority="marcrelator">Artist</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>still image</typeOfResource>
+   <genre authority="aat">caricatures</genre>
+   <originInfo>
+      <dateCreated
+                   encoding="w3cdtf"
+                   keyDate="yes">1871-11-25</dateCreated>
+   </originInfo>
+   <physicalDescription>
+      <form
+            type="technique"
+            authority="aat">chromolithographs</form>
+      <internetMediaType>image/tiff</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+   </physicalDescription>
+   <abstract displayLabel="Caption">Caption: "A far advanced Radical."</abstract>
+   <note displayLabel="Category">Politicians</note>
+   <note displayLabel="Group">Statesmen, No. 97</note>
+   <note displayLabel="Signature">Unsigned</note>
+   <note displayLabel="staff">"Group" is the Vanity Fair classification. "Category" is taken from Vanity Fair, Ltd.: Vanity Fair Color Lithographs (not Reproductions) Dating From 1869 to 1914, From the Original British, Vanity Fair Magazine, Caricatured by Spy, Ape and Others. Cincinnati, Ohio: Vanity fair, Ltd., [1970].</note>
+   <subject authority="lcsh">
+      <topic>Chromolithography</topic>
+   </subject>
+   <subject authority="lcsh">
+      <topic>Politicians</topic>
+      <geographic>Great Britain</geographic>
+      <genre>Caricatures and cartoons</genre>
+   </subject>
+   <relatedItem type="series" displayLabel="Part of">
+      <titleInfo>
+         <nonSort>The</nonSort>
+         <title>Cecil Lang Collection of Vanity Fair Illustrations</title>
+      </titleInfo>
+      <originInfo>
+         <dateCreated keyDate="yes" encoding="w3cdtf" point="start">1868</dateCreated>
+         <dateCreated encoding="w3cdtf" point="end">1914</dateCreated>
+      </originInfo>
+      <identifier
+                  type="accessionNumber"
+                  displayLabel="Collection Accession Number">MSS 12175</identifier>
+      <location>
+         <physicalLocation>Small Special Collections Library</physicalLocation>
+      </location>
+   </relatedItem>
+   <relatedItem type="series" displayLabel="Appears in">
+      <titleInfo>
+         <title>Vanity Fair</title>
+      </titleInfo>
+      <originInfo>
+         <place>
+            <placeTerm type="text">London</placeTerm>
+         </place>
+         <dateCreated keyDate="yes" encoding="w3cdtf" point="start">1868</dateCreated>
+         <dateCreated encoding="w3cdtf" point="end">1914</dateCreated>
+      </originInfo>
+      <part>
+         <detail type="issue">
+            <number>160</number>
+         </detail>
+      </part>
+   </relatedItem>
+   <identifier type="local" displayLabel="Legacy ID">162380</identifier>
+   <identifier type="local" displayLabel="pid">uva-lib:620779</identifier>
+   <location>
+      <physicalLocation>Small Special Collections Library</physicalLocation>
+   </location>
+   <accessCondition type="useAndReproduction">No Copyright - United States (NoC-US)</accessCondition>
+   <recordInfo>
+      <recordContentSource
+                           authority="marcorg">viu</recordContentSource>
+      <recordOrigin>Created programmatically by Digital Content Management &amp;
+                    Dissemination, University of Virginia Library.</recordOrigin>
+      <languageOfCataloging>
+         <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      </languageOfCataloging>
+      <recordCreationDate
+                          encoding="w3cdtf">2016-03-23T11:45:56.747-04:00</recordCreationDate>
+   </recordInfo>
+</mods>
