@@ -56,7 +56,7 @@
                   type="accessionNumber"
                   displayLabel="Collection Accession Number">MSS 12175</identifier>
       <location>
-         <physicalLocation>Small Special Collections Library</physicalLocation>
+         <physicalLocation>Special Collections, University of Virginia Library, Charlottesville, Va.</physicalLocation>
       </location>
    </relatedItem>
    <relatedItem type="series" displayLabel="Appears in">
@@ -79,7 +79,7 @@
    <identifier type="local" displayLabel="Legacy ID">162167</identifier>
    <identifier type="local" displayLabel="pid">uva-lib:620566</identifier>
    <location>
-      <physicalLocation>Small Special Collections Library</physicalLocation>
+      <physicalLocation>Special Collections, University of Virginia Library, Charlottesville, Va.</physicalLocation>
    </location>
    <accessCondition type="useAndReproduction">No Copyright - United States (NoC-US)</accessCondition>
    <recordInfo>
